@@ -1,6 +1,6 @@
 **follow the below steps:**
-# download the file 
-GoogleNews-vectors-negative300.bin.gz(https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit)
+# 1.download the file 
+[GoogleNews-vectors-negative300.bin.gz](https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit)
 
 ```
 import numpy as np
@@ -13,7 +13,9 @@ with open("GoogleNews-vectors-negative300.bin", 'wb') as new_file, open("GoogleN
     decompressor = bz2.BZ2Decompressor()
     for data in iter(lambda : file.read(100 * 1024), b''):
         new_file.write(decompressor.decompress(data))
-
+  ```      
+**2.after unZip the file :**
+```
 from gensim.models import KeyedVectors
 cn_model = KeyedVectors.load_word2vec_format('GoogleNews-vectors-negative300.bin', binary=True)
 
