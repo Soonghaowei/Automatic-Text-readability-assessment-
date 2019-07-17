@@ -1,4 +1,7 @@
 **follow the below steps:**
+# download the file 
+GoogleNews-vectors-negative300.bin.gz(https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit)
+
 ```
 import numpy as np
 
@@ -6,7 +9,7 @@ import re
  
 from gensim.models import KeyedVectors
 import warnings
-with open("GoogleNews-vectors-negative300.bin", 'wb') as new_file, open("GoogleNews-vectors-negative300.rar", 'rb') as file:
+with open("GoogleNews-vectors-negative300.bin", 'wb') as new_file, open("GoogleNews-vectors-negative300.bin.gz", 'rb') as file:
     decompressor = bz2.BZ2Decompressor()
     for data in iter(lambda : file.read(100 * 1024), b''):
         new_file.write(decompressor.decompress(data))
