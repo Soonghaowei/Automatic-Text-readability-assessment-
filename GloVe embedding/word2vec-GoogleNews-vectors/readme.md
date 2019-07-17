@@ -1,5 +1,5 @@
-**follow the below steps:**
-**1.download the file and unZip **
+**follow the below steps:
+1.download the file and unZip **
 
 [GoogleNews-vectors-negative300.bin.gz](https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit)
 
