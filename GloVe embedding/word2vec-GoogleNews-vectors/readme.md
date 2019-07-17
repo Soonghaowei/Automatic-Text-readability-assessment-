@@ -1,5 +1,11 @@
 **follow the below steps:**
 ```
+import numpy as np
+
+import re
+ 
+from gensim.models import KeyedVectors
+import warnings
 with open("GoogleNews-vectors-negative300.bin", 'wb') as new_file, open("GoogleNews-vectors-negative300.rar", 'rb') as file:
     decompressor = bz2.BZ2Decompressor()
     for data in iter(lambda : file.read(100 * 1024), b''):
